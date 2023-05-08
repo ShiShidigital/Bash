@@ -1,0 +1,46 @@
+ --- This is a Cheatsheat for Texteditor Vim ---
+
+From Commandline call 'vi filename' to open a file in Vim. 
+
+Press i to change into insert mode. Text will insert where the cursor currently is.
+Overwriting existing text. It is not possible to move around with the arrow keys or 
+to delete anything other than overwriting on the line itself. 
+
+Press 'Esc' to get out of insert mode into Edit Mode.
+
+Saving and Exiting is only possible in Edit Mode! 
+When in Edit Mode I can use most of the commands.
+
+- ZZ	- Save and exit 
+- :q!	- don't save and exit 
+- :w 	- save but don't exit 
+- :wq	- save and exit 
+
+- Arrow keys	- move cursor around (only in Edit Mode!)
+- j, h, k, l	- move the cursor around 
+- ^		- move cursor to beginning of the current line 
+- $		- move cursor to end of the current line 
+- nG		- move to the nth line
+- G		- move to the last line
+- w		- move to the beginning of the next word 
+- nw		- move n words forward
+- b		- move to beginning of previous word 
+- nb		- move back n words 
+- {		- move backward one paragraph 
+- }		- move forward one paragraph
+
+Deleting things (only in Edit Mode!!!) 
+- x 		- delete single character
+- nx		- delete n characters 
+- dd		- delete current line 
+- dn 		- d followed by a movement command. Delete to where the 
+		  movement command would have taken you.
+
+Undoing things 
+- u		- Undo the last action 
+- U 		- Undo all changes to the current line
+
+Other Stuff
+:set nu		- enable line numbers
+
+
