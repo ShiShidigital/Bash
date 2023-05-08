@@ -1,0 +1,158 @@
+
+# Here I collect some Linux commands I learned about.
+
+Lesson 1
+Commands
+pwd 	- Print Working Directory. Shows where I currently am. 
+ls	- List the contents of a directory 
+ls -l	- Lists the contents of a directory in a longer format with more details.
+cd	- Change Directories. Move to another directory 
+
+Concepts
+Relative Path - A file or directory location relative to where I currently am in the file system. 
+Absolute Path - A file or directory in relation to the root of the file system.
+
+
+Lesson 2
+Commands
+file 	- obtain information about what type of a file a file or directory is.
+ls -a	- Lists the contents of a directory, including hidden files. 
+
+Concepts 
+Everything is a file under Linux - Even directories. 
+Linux is an extensionless system - Files can have any extension they like or none at all. 
+Linux is case sensitive - Beware of silly typos.
+
+
+Lesson 3 
+Commands 
+man <command>		- Look up the manual page for a particular command. 
+man -k <search term> 	- Do a keyword search for all manual pages containing the given search term. 
+/<term>			- Within a manual page, perform a search for 'term'.
+n			- After performing a search within a manual page, select the next found item.
+
+Concepts
+The man pages are your friend - Instead of trying to remember everything, instead remember 
+				you can easily look stuff up in the man pages.
+
+
+Lesson 4 
+Commands
+mkdir	- Make Directory - Create a directory.
+rmdir 	- Remove Directory - Delete a directory.
+touch 	- Create a blank file. 
+cp	- Copy - Copy a file or directory.
+mv 	- Move - Move a file or directory (or rename it).
+rm 	- Remove - Delete a file.
+
+Concepts
+No undo	- The Linux command line does not have an undo feature. 
+          Perform destructive actions carefully.
+Command line options - Most commands have many useful command line options.
+		       Make sure you skim the man page for new commands so you 
+		       are familiar with what they can do and what is available.
+
+
+Lesson 5 
+Commands
+vi	- Edit a file in Vim Texteditor 
+cat	- View a file 
+less	- Better for viewing large files.
+
+Concepts 
+No mouse - Vim is a texteditor where everything is done on the keyboard. 
+Edit commands - There are many of them. Practice is the key to remember 
+                most commonly used and useful ones.
+
+
+Lesson 6
+Wildcards
+*	- represents zero or more characters 
+?	- represents a single character 
+[]	- represents a range of characters
+
+Concepts
+Anywhere in any path - Wildcards may be used at any part of a path.
+Wherever a path is used - Because wildcard substitution is done by the system,
+			  not the command, they may be used wherever a path is used.
+ 
+Lesson 7
+Commands 
+chmod 	- Change permissions on a file or directory 
+ls -ld	- View the permissions for a specific directory 
+
+Concepts 
+Security - Correct permissions are important for the security of a system. 
+Usage - Setting the right permissions is important in the smooth running of certain
+        tasks on Linux.
+ 
+
+Lesson 7
+Commands
+head	- View the first n lines of data, default is 10.
+tail	- View the last n lines of data, default is 10.
+sort	- Organise data into order, default is alphabetically.
+nl	- Print line numbers before data.
+wc 	- Print a count of lines, words and characters.
+cut	- Cut the data into fields and only display the specified fields.
+sed	- Do a search and replace on the data.
+uniq	- Remove duplicate lines. 
+tac	- Print the data in reverse order.
+
+Concepts
+Processing - Filters allow us to process and format data in interesting ways.
+man pages - Most of these programs have command line options that allow you to 
+	    modify their behaviour.
+
+
+Lesson 8
+Commands
+egrep	- View lines of data which match a particular pattern.
+
+Concepts
+Regular Expressions - A powerful way to identify particular pieces of information.
+
+
+Lesson 9
+Redirection Commands
+>	- Save output to a file.
+>>	- Append output to a file.
+<	- Read input from a file.
+2>	- Redirect error messages. 
+|	- Send the output from one program as input to another program.
+
+Concepts
+Streams - Every program you may run on the command line has 3 streams,
+	  STDIN, STDOUT and STDERR.
+
+
+Lesson 10 
+Commands
+top	- View real-time data about processes running on the system.
+ps	- Get a listing of processes running on the system.
+kill	- End the running process, using the PID of a process.
+jobs	- Display a list of current jobs running in the background. 
+fg	- Move a background process into the foreground.
+ctrl+z	- Pause the current foreground process and move it into the background.
+
+Concepts
+Control - We have quite a bit of control over the running of our programs.
+
+
+Lesson 11
+#!	- Shebang. Indicates which interpreter a script should be run with.
+echo	- Print a message to the screen.
+which	- Tells the path to a particular program.
+$	- Placed before a variable name when we are referring to it's value.
+``	- Backticks. Used to save the output of a program into a variable.
+date	- Prints the date.
+if [] then else fi	- Perform basic conditional logic.
+
+Concepts
+Behave the same - Anything I may do on the command line I may do in a script and it 
+                  will behave exactly the same.
+Formatting - Bash scripts are particularly picky when it comes to formatting!!! 
+	     Make sure spaces are put where they are needed and not put when
+	     they are not needed.
+
+
