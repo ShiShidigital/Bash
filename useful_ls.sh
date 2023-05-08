@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 # I want to create useful lists with the ls command for me
-# with only the info I need usually
 # Shira 5/5/23
+
+echo "Following stuff is from Script: $0"
 
 echo
 current_directory=$(pwd)
